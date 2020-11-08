@@ -1,0 +1,14 @@
+{
+    "name": "week2",
+    "version": "1.0.1",
+    "engines": {
+      "node": "10.19.0"
+    },
+    "main": "index.js",
+    "repository": "https://github.com/itmo-week2",
+    "author": "annakuznetsova",
+    "license": "MIT",
+    "scripts": {
+      "start": "node index.js"
+    }
+  }
