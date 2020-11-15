@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Кузнецова Анна - Практическое задание 3</title>
+</head>
+<body>
+<div>
+    <label for="inp">Введите текст</label>
+    <input type="text" id="inp">
+    <button id="bt">Отправить</button>
+    <script type="text/javascript">
+
+        const button = document.querySelector('#bt');
+        button.addEventListener('click', (evt) => {
+            const url = document.querySelector('#inp').value;
+            fetch(url).then((res) => res.text()).then((res) => {
+                document.querySelector('#inp').value  = res;
+            })
+        });
+    </script>
+</div>
+</body>
+</html>
